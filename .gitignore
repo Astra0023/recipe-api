@@ -1,0 +1,102 @@
+# ===============================
+# Build outputs
+# ===============================
+bin/
+obj/
+out/
+
+# ===============================
+# Visual Studio
+# ===============================
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===============================
+# Rider / JetBrains
+# ===============================
+.idea/
+
+# ===============================
+# .NET secrets
+# ===============================
+appsettings.Development.json
+secrets.json
+*.secrets.json
+
+# User secrets (dotnet user-secrets)
+**/secrets.json
+
+# ===============================
+# Logs
+# ===============================
+*.log
+logs/
+
+# ===============================
+# EF Core / Database
+# ===============================
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+Migrations/*Designer.cs
+
+# Keep migration files but ignore designer rebuilds if needed
+
+# ===============================
+# ASP.NET Core
+# ===============================
+wwwroot/uploads/
+wwwroot/temp/
+
+# ===============================
+# OS files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Docker
+# ===============================
+docker-compose.override.yml
+
+# ===============================
+# Publish output
+# ===============================
+publish/
+*.publishsettings
+
+# ===============================
+# Test results
+# ===============================
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# ===============================
+# NuGet
+# ===============================
+*.nupkg
+.nuget/
+packages/
+
+# ===============================
+# EF Core tools cache
+# ===============================
+*.localhistory
+
+# ===============================
+# Environment files
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Rider/Resharper caches
+# ===============================
+_ReSharper*/
