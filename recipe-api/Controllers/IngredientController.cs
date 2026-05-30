@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace recipe_api.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/ingredients")]
     public class IngredientController : ControllerBase
     {
         private readonly IIngredientService _service;
