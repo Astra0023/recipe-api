@@ -15,8 +15,7 @@ namespace recipe_api.Controllers
         }
 
         [HttpGet]
-        public async Task<IResult> GetAll(
-            CancellationToken cancellationToken)
+        public async Task<IResult> GetAll(CancellationToken cancellationToken)
         {
             var recipes = await _service.GetAllAsync(cancellationToken);
 

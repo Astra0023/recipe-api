@@ -8,13 +8,12 @@ namespace infrastructure.Repositories
     public sealed class RecipeRepository : IRecipeRepository
     {
         private readonly AppDbContext _context;
-
         public RecipeRepository(AppDbContext context)
         {
             _context = context;
         }
 
-        public async Task<List<Recipe>> GetAllAsync(CancellationToken cancellationToken = default)
+        public async Task<List<Recipe>> GetAllRecipesAsync(CancellationToken cancellationToken = default)
         {
             try
             {
@@ -45,12 +44,9 @@ namespace infrastructure.Repositories
 
         public async Task AddAsync(Recipe recipe, CancellationToken cancellationToken = default)
         {
-            await _context.Recipes.AddAsync(
-                recipe,
-                cancellationToken);
+            await _context.Recipes.AddAsync(recipe, cancellationToken);
 
-            await _context.SaveChangesAsync(
-                cancellationToken);
+            await _context.SaveChangesAsync(cancellationToken);
         }
     }
 }

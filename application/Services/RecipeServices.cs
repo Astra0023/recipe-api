@@ -15,7 +15,7 @@ namespace application.Services
 
         public async Task<List<RecipeResponseDto>> GetAllAsync(CancellationToken cancellationToken = default)
         {
-            var recipes = await _repository.GetAllAsync(cancellationToken);
+            var recipes = await _repository.GetAllRecipesAsync(cancellationToken);
 
             return recipes.Select(recipe => new RecipeResponseDto
             {

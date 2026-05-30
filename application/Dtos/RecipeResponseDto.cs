@@ -1,12 +1,8 @@
 ﻿namespace application.Dtos
 {
-    public sealed class RecipeResponseDto
+    public sealed class RecipeResponseDto : CommonDto
     {
         public int RecipeId { get; set; }
-
-        public string Name { get; set; } = default!;
-
-        public string? Description { get; set; }
 
         public string Author { get; set; } = default!;
 
